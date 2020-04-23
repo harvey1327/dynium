@@ -2,6 +2,7 @@ import * as express from "express";
 import * as bodyParser from "body-parser";
 import { PeopleRoute } from "./routes/PeopleRoute";
 import * as mongoose from "mongoose";
+import * as cors from "cors";
 
 class App {
 
@@ -19,6 +20,7 @@ class App {
     private config(): void{
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({ extended: false }));
+        this.app.use(cors())
     }
 
     private mongoSetup(): void{
