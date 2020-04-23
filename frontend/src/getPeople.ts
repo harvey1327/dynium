@@ -1,4 +1,4 @@
 export const getPeople = (name: string) =>
-    fetch(`http://backend:4000/people?name=${name}`, {
+    fetch(`http://localhost:4000/people?name=${name}`, {
         method: 'GET',
     });
