@@ -20,7 +20,8 @@ You can retrieve all people by calling the GET
 http://localhost:4000/people/all
 ```
 
-Navigate to the frontend directory and run to bring up the UI and start searching
+Navigate to the frontend directory and run
 ```
 npm start
 ```
+to bring up the UI and start searching
