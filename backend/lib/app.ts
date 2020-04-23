@@ -8,7 +8,7 @@ class App {
 
     public app: express.Application;
     public peopleRoute: PeopleRoute = new PeopleRoute();
-    public mongoUrl: string = 'mongodb://localhost/peopleDB';
+    public mongoUrl: string = 'mongodb://mongo:27017/peopleDB';
 
     constructor() {
         this.app = express();
